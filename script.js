@@ -4,9 +4,12 @@ function genList(){
 	let s = (document.getElementById("input").value).split('\n'); // s is an array containing all the lines of the input
 
 	if(document.getElementById("new_algorithm").checked){ // Remove the white spaces
-		for(let i = 0; i < s.length; i++){
-			if(s[i] == ""){
-				s.splice(i, 1);
+		let max = s.length;
+		for(let n = 0; n < max; n++){
+			for(let i = 0; i < s.length; i++){
+				if(s[i] == ""){
+					s.splice(i, 1);
+				}
 			}
 		}
 	}
