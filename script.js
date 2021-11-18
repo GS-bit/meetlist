@@ -3,6 +3,14 @@ function genList(){
 
 	let s = (document.getElementById("input").value).split('\n'); // s is an array containing all the lines of the input
 
+	if(document.getElementById("new_algorithm").checked){ // Remove the white spaces
+		for(let i = 0; i < s.length; i++){
+			if(s[i] == "\n"){
+				s.splice(i, 1);
+			}
+		}
+	}
+	
 	for(let i = 0; i < s.length; i++){
 		if(!isNaN(parseInt(s[i][0] + s[i][1])) && !isNaN(parseInt(s[i][3] + s[i][4])) && s[i][2] == ":" && s[i].length == 5){
 			document.getElementById("output").value += s[i-1].replace(":", "\n"); // Adding the names in the output
