@@ -22,15 +22,19 @@
 				<label>Cole o histórico de conversas aqui:</label>
 				</div>
 				<div class="row">
-				<textarea id="input" rows=10 class="form-control" style="resize: none; height:100%; background-color:#FFF" onchange="genList()"></textarea>
+				<textarea id="input" rows=10 class="form-control" style="resize: none; height:100%; background-color:#FFF"></textarea>
 				</div>
 			</div>
 		</div>
+		
+		<div class="row mt-4">
+			<input type="button" class="btn btn-primary" value="Em seguida, clique aqui" onclick="genList()" />
+		</div>
 	
-		<div class="row" style="margin-top:2%">
+		<div class="row mt-4">
 			<div class="form-group">
 				<div class="row">
-				<label>Resultado aqui:</label>
+				<label>E veja o resultado aqui:</label>
 				</div>
 				<div class="row">
 				<textarea id="output" rows=10 class="form-control" readonly=false style="resize: none; height:100%; background-color:#FFF"></textarea>
