@@ -5,7 +5,7 @@ function genList(){
 
 	if(document.getElementById("new_algorithm").checked){ // Remove the white spaces
 		for(let i = 0; i < s.length; i++){
-			if(s[i] == "\n"){
+			if(s[i] == "\n" or s[i] == ""){
 				s.splice(i, 1);
 			}
 		}
