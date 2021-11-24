@@ -3,7 +3,7 @@ function genList(){
 
 	let s = (document.getElementById("input").value).split('\n'); // s is an array containing all the lines of the input
 
-	let option = document.getElementById("algorithm_type").value;
+	let option = document.getElementById("algorithm-type").value;
 	
 	if(option == "2"){ // Remove the white spaces
 		let i = 0;
