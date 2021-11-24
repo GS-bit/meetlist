@@ -28,12 +28,12 @@
 		</div>
 		
 		<div class="row mt-4">
-			<div class="form-check">
-  				<input class="form-check-input" type="checkbox" value="" id="new_algorithm">
-  				<label class="form-check-label" for="defaultCheck1">
-    				Inclua o novo algoritmo [OPCIONAL] [BETA]
-  				</label>
-			</div>
+			<label>Tipo de algoritmo:</label>
+			<select id="algorithm-type" class="form-select">
+				<option selected="" value="1">Algoritmo padrão (nomes de pessoas em uma linha anterior ao horário de envio)</option>
+				<option value="2">Algoritmo padrão melhorado (mesmo que algoritmo padrão, porém linhas em branco são desconsideradas)</option>
+				<option value="3">Algoritmo padrão modificado (nomes de pessoas na mesma linha com o horário de envio)</option>
+			</select>
 		</div>
 		
 		<div class="row mt-4">
