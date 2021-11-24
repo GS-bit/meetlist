@@ -20,8 +20,8 @@ function genList(){
 	
 	if(option == "3"){
 		for(let i = 0; i < s.length; i++){
-			if(!isNaN(parseInt(s[i][s.length - 1] + s[i][s.length - 2])) && !isNaN(parseInt(s[i][s.length - 4] + s[i][s.length - 5])) && s[i][s.length - 3] == ":"){
-				document.getElementById("output").value += (s[i].slice(0, s.length-5) + "\n") // Adding the names in the output
+			if(!isNaN(parseInt(s[i][s[i].length - 1] + s[i][s[i].length - 2])) && !isNaN(parseInt(s[i][s[i].length - 4] + s[i][s[i].length - 5])) && s[i][s[i].length - 3] == ":"){
+				document.getElementById("output").value += (s[i].slice(0, s[i].length-5) + "\n") // Adding the names in the output
 			}
 		}
 		document.getElementById("output").value = document.getElementById("output").value.substr(0, document.getElementById("output").value.length - 1); // This line removes the \n at the final line in the output	
